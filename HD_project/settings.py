@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-kfuh1c*f=9l-2=f+^zjd*pu$3dl4whf5jgd!yg0d6^fb!56daq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-gazamcnulty-hellodjango-jnksz2e21gm.ws-eu102.gitpod.io', '8000-gazamcnulty-hellodjango-d15ub1rfuoo.ws-eu102.gitpod.io' , '8000-gazamcnulty-hellodjango-d15ub1rfuoo.ws-eu102.gitpod.io'] 
+ALLOWED_HOSTS = ['8000-gazamcnulty-hellodjango-jnksz2e21gm.ws-eu102.gitpod.io', '8000-gazamcnulty-hellodjango-d15ub1rfuoo.ws-eu102.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['http://*', 'https://8000-gazamcnulty-hellodjango-d15ub1rfuoo.ws-eu102.gitpod.io']
 
 
 # Application definition
@@ -49,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
 
 ROOT_URLCONF = 'HD_project.urls'
 
