@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +8,12 @@
 </head>
 <body>
     <h1>Edit a todo item</h1>
-    <form method="POST" action="{% url 'add' %}">
+    <form method="POST">
         {% csrf_token %}
         {{ form }}
         <div>
             <p>
-                <button type="submit">Add Item</button>
+                <button type="submit">Edit Item</button>
             </p>
         </div>
     </form>
